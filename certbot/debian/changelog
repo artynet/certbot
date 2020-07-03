@@ -1,0 +1,481 @@
+python-certbot (1.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 30 Jul 2020 12:06:11 +0000
+
+python-certbot (1.5.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh patches.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 02 Jun 2020 22:05:57 -0400
+
+python-certbot (1.4.0-1) unstable; urgency=medium
+
+  * New upstream version 1.4.0
+  * Drop mock dependency unneeded in py3
+  * Bump requirement for ACME API to 1.4
+  * Bump debhelper-compat to 13
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 05 May 2020 19:03:31 -0400
+
+python-certbot (1.3.0-5) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Harlan Lieberman-Berg ]
+  * Switch to using Provides for ABI compatibility.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Mon, 27 Apr 2020 18:49:28 -0400
+
+python-certbot (1.3.0-4) unstable; urgency=medium
+
+  * http-01 test: kill pebble by job, not process group
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sun, 05 Apr 2020 14:03:48 -0400
+
+python-certbot (1.3.0-3) unstable; urgency=medium
+
+  * Fix dependencies in test.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sat, 04 Apr 2020 22:46:25 -0400
+
+python-certbot (1.3.0-2) unstable; urgency=medium
+
+  * Fix broken end-to-end testing 😳
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sat, 04 Apr 2020 16:01:37 -0400
+
+python-certbot (1.3.0-1) unstable; urgency=medium
+
+  * New upstream version 1.3.0
+  * Enable end-to-end testing 🎉
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 26 Mar 2020 21:07:58 -0400
+
+python-certbot (1.1.0-1) unstable; urgency=medium
+
+  * New upstream version 1.1.0
+  * Drop inactive Uploaders
+  * Bump S-V; no changes needed
+  * Cleanup unnecessary version deps (cme fix)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 23 Jan 2020 23:02:48 -0500
+
+python-certbot (0.40.0-1) unstable; urgency=medium
+
+  * New upstream version 0.40.0
+  * Switch to debian-compat instead of d/compat
+  * Bump python-acme version to 0.40.0
+  * Bump S-V; no changes needed
+  * Drop unnecessary lintian override.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 05 Nov 2019 19:40:23 -0500
+
+python-certbot (0.39.0-1) unstable; urgency=medium
+
+  * New upstream version 0.39.0
+  * Add dep on python3-distro
+  * Drop transitional dummy package (Closes: #940765)
+  * Fix duplicate calls to install systemd timer (Closes: #924262)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 01 Oct 2019 21:54:04 -0400
+
+python-certbot (0.36.0-1) unstable; urgency=medium
+
+  * New upstream version 0.36.0
+  * Bump dh, compat to 12
+  * Bump S-V; no changes needed
+  * Add lintian override for one-shot systemd service.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 11 Jul 2019 16:36:58 -0400
+
+python-certbot (0.35.1-1) unstable; urgency=medium
+
+  * New upstream version 0.35.1
+  * Invoke pytest through setup.py.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 09 Jul 2019 18:31:34 -0400
+
+python-certbot (0.31.0-1) unstable; urgency=medium
+
+  * New upstream version 0.31.0
+  * Bump deps changed by upstream.
+  * Bump S-V; no changes needed.
+  * Refresh patches.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sat, 09 Feb 2019 19:39:59 -0500
+
+python-certbot (0.28.0-2) unstable; urgency=medium
+
+  * Remove unnecessary letsencrypt.postrm (Closes: #921423)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 05 Feb 2019 22:15:02 -0500
+
+python-certbot (0.28.0-1) unstable; urgency=medium
+
+  * Add systemd warning to crontab file (Closes: #908841)
+  * New upstream version 0.28.0
+  * Refresh patch affected by unrelated changes
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 07 Nov 2018 18:19:31 -0500
+
+python-certbot (0.27.0-1) unstable; urgency=medium
+
+  * New upstream version 0.27.0
+  * Refresh patch after upstream migration to codecov
+  * Bump python-sphinx requirement defensively; bump S-V with no changes
+  * Bump dep on python-acme to 0.26.0~
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 05 Sep 2018 20:29:44 -0400
+
+python-certbot (0.26.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 18 Jul 2018 01:10:01 -0400
+
+python-certbot (0.26.0-1) unstable; urgency=medium
+
+  * New upstream version 0.26.0
+  * Bump S-V; add R-R-R: no
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 12 Jul 2018 22:39:22 -0400
+
+python-certbot (0.25.0-1) unstable; urgency=medium
+
+  * New upstream version 0.25.0
+  * Bump python-acme dep version.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Mon, 11 Jun 2018 22:05:17 -0400
+
+python-certbot (0.24.0-2) unstable; urgency=medium
+
+  * Update team email address. (Closes: #899858)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Mon, 28 May 2018 19:03:01 -0400
+
+python-certbot (0.24.0-1) unstable; urgency=medium
+
+  * Add OR to dep on python-distutils for stretch-bpo
+  * New upstream version 0.24.0
+  * Bump version dep on python3-acme
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 03 May 2018 19:43:04 -0400
+
+python-certbot (0.23.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add testdata back in to prevent test failure in RDeps. (Closes: #894025)
+  * Bump S-V; no changes needed.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Fri, 06 Apr 2018 23:23:17 -0400
+
+python-certbot (0.22.2-2) unstable; urgency=medium
+
+  * Change the way we remove testdata for better downstream support
+  * Add dep on python3-distutils (Closes: #893775)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 22 Mar 2018 18:53:32 -0400
+
+python-certbot (0.22.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 21 Mar 2018 00:54:31 -0400
+
+python-certbot (0.22.0-1) unstable; urgency=medium
+
+  * New upstream release -- now with wildcards!
+  * Break the strict dependency relationship between certbot packages.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 15 Mar 2018 20:22:37 -0400
+
+python-certbot (0.21.1-1) unstable; urgency=high
+
+  * New upstream release.
+  * Move d/copyright format to HTTPS
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 30 Jan 2018 21:02:48 -0500
+
+python-certbot (0.20.0-3) unstable; urgency=medium
+
+  * Setup logrotation for certbot log files. (Closes: #873581, #881176)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 09 Jan 2018 22:03:27 -0500
+
+python-certbot (0.20.0-2) unstable; urgency=low
+
+  * Add additional Breaks on py2 variants of libs.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sun, 07 Jan 2018 22:58:45 -0500
+
+python-certbot (0.20.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to python3!
+  * Update to debhelper 11, bump S-V.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Fri, 05 Jan 2018 21:49:26 -0500
+
+python-certbot (0.19.0-1) unstable; urgency=medium
+
+  * New upstream release. (Closes: #838548)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 04 Oct 2017 19:39:01 -0400
+
+python-certbot (0.18.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump S-V; no changes needed.
+  * Switch from python-sphinx to python3-sphinx
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sun, 01 Oct 2017 18:44:11 -0400
+
+python-certbot (0.17.0-2) unstable; urgency=high
+
+  * Revert d/rules for systemd cleanup. (Closes: #872090)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Mon, 14 Aug 2017 22:28:10 -0400
+
+python-certbot (0.17.0-1) unstable; urgency=medium
+
+  [ Mattia Rizzolo ]
+  * d/control: rename git repository to python-certbot too
+
+  [ Harlan Lieberman-Berg ]
+  * New upstream version 0.17.0
+  * Bump S-V to 4.0.1, changing Priority to optional.
+  * Bump B-D on python-cryptography
+  * Add very basic autopkgtest.
+  * Refresh patches.
+  * Fix merge failure.
+  * Tweak d/rules for systemd cleanup, raise compat to 10.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sun, 06 Aug 2017 17:49:12 -0400
+
+python-certbot (0.14.2-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Robie Basak <robie.basak@ubuntu.com>  Fri, 26 May 2017 12:51:44 +0100
+
+python-certbot (0.12.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Add python-ipdb as build dependency.
+  * Drop unnecessary dependency on dh-systemd (Closes: #856239)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 21 Mar 2017 23:10:14 -0400
+
+python-certbot (0.11.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add .pc to gitignore
+  * Drop python-psutil dep no longer needed
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sun, 19 Feb 2017 14:05:17 -0500
+
+python-certbot (0.10.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 26 Jan 2017 01:11:55 -0500
+
+python-certbot (0.10.1-1) unstable; urgency=medium
+
+  [ Ondřej Surý ]
+  * Tweaks to B-D, Depends for backporting to Trusty. (Closes: #844687)
+
+  [ Harlan Lieberman-Berg ]
+  * New upstream version.
+  * Update dependencies dropped by upstream, misc. cleanup
+  * Remove ugly PYTHONPATH hack no longer needed, misc. cleanup
+  * Pre-create /etc/letsencrypt (Closes: #845792)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Fri, 20 Jan 2017 22:19:59 -0500
+
+python-certbot (0.9.3-1) unstable; urgency=medium
+
+  * New upstream version. (Closes: #840995)
+  * Add python-psutil to Recommends.
+  * Refresh patches.
+  * Add support for systemd timers (Closes: #833453)
+  * Add Documentation to systemd unit service
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sat, 22 Oct 2016 22:03:06 -0400
+
+python-certbot (0.8.1-3) unstable; urgency=medium
+
+  * Prevent network access at build time. (Closes: #834833)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Fri, 02 Sep 2016 18:31:14 -0400
+
+python-certbot (0.8.1-2) unstable; urgency=medium
+
+  * Ship new crontab, fixing errors when using apache plugin
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 07 Jul 2016 21:11:59 -0400
+
+python-certbot (0.8.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add pydist-overrides to copy version deps.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sun, 26 Jun 2016 20:55:52 -0400
+
+python-certbot (0.8.0-1) unstable; urgency=high
+
+  * New upstream release. (Closes: #824452)
+  * Bump python-psutil dependency.
+  * Add Suggests for -doc. (Closes: #825598)
+  * Fix cron file to run only twice. (Closes: #825732)
+  * Add transitional dummy for letsencrypt. (Closes: #826010)
+  * Remove manpage patch no longer needed.
+  * Refresh patches.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 02 Jun 2016 20:09:02 -0400
+
+python-certbot (0.6.0-2) unstable; urgency=medium
+
+  * Fix major bug in crontab file. (Closes: #824709)
+  * Fix homepage to point to new location. (Thanks, Axel!)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 18 May 2016 21:06:12 -0400
+
+python-certbot (0.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Migrate package to the certbot name.
+  * Require parsedatetime >= 1.3 (Closes: #818587)
+  * Update d/watch with new name.
+  * Refresh patches.
+  * Add cronjob to automatically renew certificates.
+  * Ship symlink from old letsencrypt binary.
+  * Switch Breaks for -apache to the certbot name.
+  * Reword short descriptions
+  * Bump S-V; no changes needed.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sat, 14 May 2016 16:45:44 -0400
+
+python-letsencrypt (0.5.0-1) unstable; urgency=medium
+
+  * New upstream release. (Closes: #820721)
+  * Change my email address
+  * Add version constraint on python-setuptools
+  * Clean up after build properly (Closes: #818667)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 13 Apr 2016 19:04:44 -0400
+
+python-letsencrypt (0.4.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Match version restriction on python-parsedatetime
+  * Bump S-V; no changes needed
+  * Fix Vcs-git URL
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Mon, 29 Feb 2016 21:22:32 -0500
+
+python-letsencrypt (0.4.0-1) unstable; urgency=medium
+
+  * New upstream version. (Closes: #813689)
+  * Ship the upstream tests and testdata. (Closes: #814010)
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Thu, 11 Feb 2016 20:54:43 -0500
+
+python-letsencrypt (0.3.0-1) unstable; urgency=medium
+
+  * New upstream version.  (Closes: #812223)
+  * Switch Vcs-git to https.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Thu, 28 Jan 2016 19:09:44 -0500
+
+python-letsencrypt (0.2.0-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Delete config and log directories on purge (closes: #809355)
+  * Drop priority to extra due to transitive dep on python-mock.
+  * Drop dep on pyopenssl to 0.13, include dep version for configargparse.
+  * Drop permission-failures patch applied upstream.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Fri, 15 Jan 2016 19:21:56 -0500
+
+python-letsencrypt (0.1.1-3) unstable; urgency=medium
+
+  * New version to fix FTBFS.  (Closes: #808361)
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Tue, 22 Dec 2015 23:06:12 -0500
+
+python-letsencrypt (0.1.1-2) unstable; urgency=medium
+
+  * Dynamically generate d/control.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Sat, 19 Dec 2015 17:50:38 -0500
+
+python-letsencrypt (0.1.1-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Tue, 15 Dec 2015 21:41:01 -0500
+
+python-letsencrypt (0.1.0-2) unstable; urgency=medium
+
+  * First release for sid.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Thu, 10 Dec 2015 23:33:21 -0500
+
+python-letsencrypt (0.1.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Refresh patches.
+  * Switch PGP key to new upstream key.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Thu, 03 Dec 2015 21:24:59 -0500
+
+python-letsencrypt (0.0.0.dev20151123-2) experimental; urgency=medium
+
+  * Alter dependency to solve unsatisfiable dependency. (Closes: #805738)
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Tue, 01 Dec 2015 21:29:49 -0500
+
+python-letsencrypt (0.0.0.dev20151123-1) experimental; urgency=medium
+
+  * New upstream version.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Sun, 29 Nov 2015 23:39:15 -0500
+
+python-letsencrypt (0.0.0.dev20151114-3) experimental; urgency=medium
+
+  * Fix documentation errors due to path errors. (Closes: #805262)
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Fri, 20 Nov 2015 21:19:21 -0500
+
+python-letsencrypt (0.0.0.dev20151114-2) experimental; urgency=medium
+
+  * Version dependency of letsencrypt on python-letsencrypt (closes: #805185)
+  * Add python-acme dependency on python-letsencrypt (closes: #805186)
+
+ -- Francois Marier <francois@debian.org>  Sun, 15 Nov 2015 10:07:50 -0800
+
+python-letsencrypt (0.0.0.dev20151114-1) experimental; urgency=medium
+
+  [ Francois Marier ]
+  * Bump the python-sphinx dependency to >= 1.3.1-1 to ensure that
+    python-sphinx-rtd-theme is pulled in.
+
+  [ Harlan Lieberman-Berg ]
+  * New upstream release. (Closes: #805049)
+  * Alter version of python-sphinx for backports compatibility.
+  * Update dependency versions to match setup.py
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Sat, 14 Nov 2015 12:26:04 -0500
+
+python-letsencrypt (0.0.0.dev20151104-1) experimental; urgency=medium
+
+  * Initial release. (Closes: #774387)
+
+ -- Francois Marier <francois@debian.org>  Wed, 11 Nov 2015 18:49:07 -0800
