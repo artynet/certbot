@@ -1,0 +1,13 @@
+# <bmw> rbasak: while it's not exactly pretty, here's a pretty decent
+# one line test that certbot and its plugins and dependencies are
+# installed correctly
+# <bmw> certbot plugins --prepare | grep -q apache && certbot --help
+# nginx | grep -q nginx-ctl
+
+Test-Command: certbot --help nginx | grep -q nginx-ctl
+Depends: python3-certbot-nginx
+
+# End to end nginx test
+Tests: nginx
+Depends: @, pebble, nginx, curl
+Restrictions: needs-root, allow-stderr, isolation-container

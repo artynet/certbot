@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Crash out on any error
+set -euo pipefail
+
+# First, define a safe place for us to puke files
+if [ ! -z $AUTOPKGTEST_TMP -a -d $AUTOPKGTEST_TMP ]
+then
+    TMP_DIR=$AUTOPKGTEST_TMP
+else
+    TMP_DIR=`mktemp -d`
+fi
+
+# Ensure pebble dies at exit
+trap "exit" INT TERM ERR
+trap "kill %1" EXIT
+
+# Background pebble, since we'll need that
+## Speed up pebble
+export PEBBLE_VA_NOSLEEP=1
+## Prevent flakiness from nonce failures
+export PEBBLE_WFE_NONCEREJECT=0
+pebble -config debian/tests/pebble-config.json &
+## Give pebble time to start
+sleep 5
+
+# Next, trigger certbot
+certbot \
+    --no-random-sleep-on-renew \
+    --server https://localhost:14000/dir \
+    --no-verify-ssl \
+    --manual-public-ip-logging-ok \
+    --config-dir ${TMP_DIR}/certbot/nginx/conf \
+    --work-dir ${TMP_DIR}/certbot/nginx/work \
+    --logs-dir ${TMP_DIR}/certbot/nginx/logs \
+    --non-interactive \
+    --no-redirect \
+    --agree-tos \
+    --register-unsafely-without-email \
+    --debug \
+    -vv \
+    run -d localhost --nginx
+
+curl --cacert ${TMP_DIR}/certbot/nginx/conf/live/localhost/chain.pem -v https://localhost/
