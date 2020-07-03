@@ -1,0 +1,349 @@
+python-acme (1.8.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 30 Jul 2020 12:06:02 +0000
+
+python-acme (1.5.0-2) unstable; urgency=medium
+
+  * New upstream version 1.5.0
+  * Drop dependency on mock not required in python3
+  * Drop debhelper-compat to 11
+  * Disable failing TLS-ALPN-01 test caused by small keys for testing.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 05 May 2020 18:53:21 -0400
+
+python-acme (1.3.0-3) unstable; urgency=medium
+
+  * Switch to using a Provides virtual package for ABI
+    management. (Closes: #954650)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Mon, 27 Apr 2020 18:39:03 -0400
+
+python-acme (1.3.0-2) unstable; urgency=medium
+
+  * Drop dep on python3-idna. (Closes: #954133)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Fri, 27 Mar 2020 11:24:16 -0400
+
+python-acme (1.3.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 03 Mar 2020 20:48:00 -0500
+
+python-acme (1.1.0-1) unstable; urgency=medium
+
+  * New upstream version 1.1.0
+  * Bump S-V; no changes needed.
+  * Drop inactive Uploaders
+  * Drop versioned depends older than oldstable (cme fix)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 23 Jan 2020 22:53:17 -0500
+
+python-acme (0.40.0-1) unstable; urgency=medium
+
+  * New upstream version 0.40.0
+  * Switch to debhelper-compat instead of d/compat
+  * Bump S-V; no changes needed.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 05 Nov 2019 19:28:06 -0500
+
+python-acme (0.39.0-1) unstable; urgency=medium
+
+  * New upstream version 0.39.0
+  * Drop Python 2 packages. (Closes: #935211)
+  * Move docs path to python-acme-doc
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 01 Oct 2019 21:40:04 -0400
+
+python-acme (0.36.0-1) unstable; urgency=medium
+
+  * New upstream version 0.36.0
+  * Bump compat to 12.
+  * Bump S-V; no changes needed.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 11 Jul 2019 16:28:33 -0400
+
+python-acme (0.35.1-1) unstable; urgency=medium
+
+  * New upstream version 0.35.1.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sun, 07 Jul 2019 20:43:56 -0400
+
+python-acme (0.31.0-1) unstable; urgency=medium
+
+  * Bump dependency on josepy to >= 1.1.0
+  * Add Breaks on python-acme against certbot << 0.20
+  * New upstream version 0.31.0
+  * Add dep on python-idna required by security extra.
+  * Bump S-V; no changes needed.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sat, 09 Feb 2019 19:07:59 -0500
+
+python-acme (0.28.0-1) unstable; urgency=medium
+
+  * New upstream version 0.28.0
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 07 Nov 2018 18:05:59 -0500
+
+python-acme (0.27.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump S-V; no changes needed.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 05 Sep 2018 20:12:58 -0400
+
+python-acme (0.26.0-1) unstable; urgency=medium
+
+  * New upstream version 0.26.0
+  * Bump S-V; add Rules-Require-Root: no
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 12 Jul 2018 22:07:01 -0400
+
+python-acme (0.25.1-1) unstable; urgency=medium
+
+  * New upstream version 0.25.1
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 13 Jun 2018 22:28:55 -0400
+
+python-acme (0.25.0-1) unstable; urgency=medium
+
+  * New upstream version 0.25.0
+  * Add new dependency on requests-toolbelt
+  * Drop unnecessary X-Python-Version fields
+  * Add pytest as build-time dep only.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Mon, 11 Jun 2018 21:54:41 -0400
+
+python-acme (0.24.0-2) unstable; urgency=medium
+
+  * Update team email address. (Closes: #895863)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Fri, 04 May 2018 20:33:30 -0400
+
+python-acme (0.24.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump S-V; no changes needed.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 03 May 2018 19:30:10 -0400
+
+python-acme (0.22.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 21 Mar 2018 00:45:24 -0400
+
+python-acme (0.22.0-1) unstable; urgency=medium
+
+  * New upstream release -- now with wildcards!
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 15 Mar 2018 20:11:05 -0400
+
+python-acme (0.21.1-1) unstable; urgency=high
+
+  * New upstream release.
+  * Cleanup from josepy separation.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Tue, 30 Jan 2018 19:25:01 -0500
+
+python-acme (0.20.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Add new dependencies introduced upstream.
+  * Bump S-V, debhelper versions.
+  * Move doc-base ref to package instead of package-doc.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Fri, 05 Jan 2018 21:44:42 -0500
+
+python-acme (0.19.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Wed, 04 Oct 2017 19:32:09 -0400
+
+python-acme (0.18.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump S-V; no changes needed.
+  * Switch to python3-sphinx for docs.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sun, 01 Oct 2017 17:38:25 -0400
+
+python-acme (0.17.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Reduce dependency on python-requests, following upstream.
+  * Increase priority to optional to comply with Policy v4.0.1.0
+  * Declare Testsuite using simple autopkgtest.
+  * Bump S-V to 4.0.1.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sun, 06 Aug 2017 14:11:53 -0400
+
+python-acme (0.14.2-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Robie Basak <robie.basak@ubuntu.com>  Fri, 26 May 2017 12:41:31 +0100
+
+python-acme (0.12.0-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Sat, 18 Mar 2017 18:13:01 -0400
+
+python-acme (0.11.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop dep on python3?-dnspython removed upstream
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 02 Feb 2017 20:31:00 -0500
+
+python-acme (0.10.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 26 Jan 2017 01:06:21 -0500
+
+python-acme (0.10.1-1) unstable; urgency=medium
+
+  * New upstream version.
+  * Drop patch applied upstream.
+  * Rejigger dependencies.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 19 Jan 2017 23:37:33 -0500
+
+python-acme (0.9.3-2) unstable; urgency=medium
+
+  * Add patch to fix tests with OpenSSL 1.1 (Closes: #844944)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Fri, 02 Dec 2016 17:53:38 -0500
+
+python-acme (0.9.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 13 Oct 2016 22:21:10 -0400
+
+python-acme (0.8.1-2) unstable; urgency=medium
+
+  * Ensure there's no network access at build time.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Fri, 02 Sep 2016 17:47:46 -0400
+
+python-acme (0.8.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Specify python-setuptools version.  (Closes: #825619)
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 30 Jun 2016 18:54:04 -0400
+
+python-acme (0.8.0-1) unstable; urgency=high
+
+  * New upstream release.
+  * Add version dep on python-setuptools.
+  * Add Suggests for -doc.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 02 Jun 2016 19:22:18 -0400
+
+python-acme (0.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add Breaks on python-certbot in rename prep.
+  * Bump S-V; no changes needed.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 12 May 2016 18:38:11 -0400
+
+python-acme (0.5.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@debian.org>  Thu, 07 Apr 2016 21:56:05 -0400
+
+python-acme (0.4.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop B-D on python3?-werkezug no longer needed by upstream
+  * Fix Vcs-git URL
+  * Bump S-V; no changes needed
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Mon, 29 Feb 2016 21:09:41 -0500
+
+python-acme (0.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Thu, 11 Feb 2016 19:39:40 -0500
+
+python-acme (0.3.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Switch Vcs-git to https.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Thu, 28 Jan 2016 18:55:06 -0500
+
+python-acme (0.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop priority to extra, due to dep on python-mock.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Fri, 15 Jan 2016 19:04:18 -0500
+
+python-acme (0.1.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Tue, 15 Dec 2015 21:32:13 -0500
+
+python-acme (0.1.0-3) unstable; urgency=medium
+
+  * Bump for release to sid.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Thu, 10 Dec 2015 23:42:46 -0500
+
+python-acme (0.1.0-2) experimental; urgency=medium
+
+  * Version the python{,3}-openssl runtime dependency (closes: #807114)
+
+ -- Francois Marier <francois@debian.org>  Sat, 05 Dec 2015 21:21:10 -0800
+
+python-acme (0.1.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Change to using new GPG key.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Thu, 03 Dec 2015 21:13:28 -0500
+
+python-acme (0.0.0.dev20151123-2) experimental; urgency=medium
+
+  * Add Breaks directive to help apt figure out upgrade paths.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Tue, 01 Dec 2015 21:15:49 -0500
+
+python-acme (0.0.0.dev20151123-1) experimental; urgency=medium
+
+  * New upstream version.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Sun, 29 Nov 2015 23:22:02 -0500
+
+python-acme (0.0.0.dev20151114-1) experimental; urgency=medium
+
+  [ Francois Marier ]
+  * Add Vcs fields to debian/control
+  * Bump the python-sphinx dependency to >= 1.3.1-1 to ensure that
+    python-sphinx-rtd-theme is pulled in.
+
+  [ Harlan Lieberman-Berg ]
+  * New upstream release.
+  * Alter python-sphinx dependency for backport compatibility.
+  * Update dependency versions to match setup.py.
+
+ -- Harlan Lieberman-Berg <hlieberman@setec.io>  Sat, 14 Nov 2015 12:07:50 -0500
+
+python-acme (0.0.0.dev20151104-1) experimental; urgency=medium
+
+  * Initial release. (Closes: #801356)
+
+ -- Francois Marier <francois@debian.org>  Wed, 11 Nov 2015 17:19:23 -0800
