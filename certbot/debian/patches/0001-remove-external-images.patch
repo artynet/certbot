@@ -1,0 +1,22 @@
+Description:  Remove external image links in documentation
+Author: Harlan Lieberman-Berg <hlieberman@setec.io>
+Forwarded: not-needed
+Last-Update: 2016-05-12
+
+Index: python-certbot/README.rst
+===================================================================
+--- python-certbot.orig/README.rst
++++ python-certbot/README.rst
+@@ -71,12 +71,6 @@ ACME spec: http://ietf-wg-acme.github.io
+ 
+ ACME working area in github: https://github.com/ietf-wg-acme/acme
+ 
+-|build-status|
+-
+-.. |build-status| image:: https://travis-ci.com/certbot/certbot.svg?branch=master
+-   :target: https://travis-ci.com/certbot/certbot
+-   :alt: Travis CI status
+-
+ .. Do not modify this comment unless you know what you're doing. tag:links-end
+ 
+ System Requirements
