@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME = certbot-nginx
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_install:
+	dh_auto_install
+	rm -rf $(CURDIR)/debian/python3-certbot-nginx/usr/lib/python*/dist-packages/certbot_nginx/tests/testdata
+
+override_dh_auto_test:
+ifdef (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	python3 setup.py test
+endif
