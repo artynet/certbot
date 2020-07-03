@@ -1,0 +1,4 @@
+# In order to ensure a smooth upgrade from the python2 version of this
+# package to the python3 version of this package, a cross-python
+# version Depends was required.
+python-certbot-nginx: python-package-depends-on-package-from-other-python-variant
