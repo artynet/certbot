@@ -1,0 +1,14 @@
+Template: certbot/remove_live_certs
+Type: boolean
+Default: true
+_Description: You have unexpired certs; do you still want to purge?
+ The certbot configuration directory /etc/letsencrypt still contains
+ unexpired certificates that may be live on your system.  If you
+ choose this option, the purge will continue and delete those
+ certificates, potentially breaking services which depend on them.
+ .
+ If you have already installed different certificates in your
+ services, or you have confirmed you don't have any services depending
+ on these certificates, you should choose this option.  To cancel and
+ manually delete the /etc/letsencrypt directory, you should refuse
+ this option.

@@ -1,0 +1,20 @@
+Description: Disable failing TLS-ALPN-01 test
+ Note, no certbot client currently uses the functionality being tested
+ here.  Additionally, the tests are related to extremely small key
+ sizes that a real user is unlikely to use.
+Author: Harlan Lieberman-Berg <hlieberman@debian.org>
+Forwarded: not-needed
+Index: python-acme/tests/standalone_test.py
+===================================================================
+--- python-acme.orig/tests/standalone_test.py
++++ python-acme/tests/standalone_test.py
+@@ -111,7 +111,8 @@ class HTTP01ServerTest(unittest.TestCase
+         self.assertFalse(is_hung, msg='Server shutdown should not be hung')
+ 
+ 
+-@unittest.skipIf(not challenges.TLSALPN01.is_supported(), "pyOpenSSL too old")
++
++@unittest.skip("Keys used in test are too small; OpenSSL refuses to use them.")
+ class TLSALPN01ServerTest(unittest.TestCase):
+     """Test for acme.standalone.TLSALPN01Server."""
+ 

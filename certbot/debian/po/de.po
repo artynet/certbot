@@ -1,0 +1,54 @@
+# Translation of python-certbot debconf templates to German
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the python-certbot package.
+# Helge Kreutzmann <debian@helgefjell.de>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: python-certbot\n"
+"Report-Msgid-Bugs-To: python-certbot@packages.debian.org\n"
+"POT-Creation-Date: 2020-06-21 21:24-0400\n"
+"PO-Revision-Date: 2020-07-04 16:25+0200\n"
+"Last-Translator: Helge Kreutzmann <debian@helgefjell.de>\n"
+"Language-Team: German <debian-l10n-german@lists.debian.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid "You have unexpired certs; do you still want to purge?"
+msgstr ""
+"Sie haben Zertifikate, die noch nicht abgelaufen sind, möchten Sie dennoch "
+"vollständig löschen?"
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid ""
+"The certbot configuration directory /etc/letsencrypt still contains "
+"unexpired certificates that may be live on your system.  If you choose this "
+"option, the purge will continue and delete those certificates, potentially "
+"breaking services which depend on them."
+msgstr ""
+"Das Certbot-Konfigurationsverzeichnis »/etc/letsencrypt« enthält noch "
+"Zertifikate, die noch nicht abgelaufen sind und auf Ihrem System genutzt "
+"werden könnten. Falls Sie diese Option auswählen, wird das vollständige "
+"Löschen fortgesetzt und diese Zertifikate löschen. Dadurch werden "
+"möglicherweise Dienste beschädigt, die von diesen Zertifikaten abhängen."
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid ""
+"If you have already installed different certificates in your services, or "
+"you have confirmed you don't have any services depending on these "
+"certificates, you should choose this option.  To cancel and manually delete "
+"the /etc/letsencrypt directory, you should refuse this option."
+msgstr ""
+"Falls Sie bereits andere Zertifikate auf Ihrem System installiert haben oder "
+"Sie überprüft haben, dass keine Dienste von diesen Zertifikaten abhängen, "
+"dann sollten Sie diese Option auswählen. Um abzubrechen und das Verzeichnis "
+"»/etc/letsencrypt« händisch zu löschen, sollten Sie diese Option ablehnen."
