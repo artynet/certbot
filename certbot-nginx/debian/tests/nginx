@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# Crash out on any error
+set -euo pipefail
+
+# First, define a safe place for us to puke files
+if [ ! -z $AUTOPKGTEST_TMP -a -d $AUTOPKGTEST_TMP ]
+then
+    TMP_DIR=$AUTOPKGTEST_TMP
+else
+    TMP_DIR=`mktemp -d`
+fi
+
+# Ensure pebble dies at exit
+trap "exit" INT TERM ERR
+trap "kill %1" EXIT
+
+# Background pebble, since we'll need that
+## Speed up pebble
+export PEBBLE_VA_NOSLEEP=1
+## Prevent flakiness from nonce failures
+export PEBBLE_WFE_NONCEREJECT=0
+pebble -config debian/tests/pebble-config.json &
+## Give pebble time to start
+MAX_WAIT=60
+i=$MAX_WAIT
+echo -n "Waiting for pebble to start "
+while /bin/true; do
+    result=0
+    echo -n "."
+    curl -s -k --connect-timeout 1 https://localhost:14000/dir &> /dev/null || result=$?
+    if [ $result -eq 0 ]; then
+        echo
+        break
+    fi
+    if [ $i -eq 0 ]; then
+        echo
+        echo "pebble failed to start after ${MAX_WAIT}s"
+        exit $result
+    fi
+    i=$(($i-1))
+    sleep 1
+done
+echo "Pebble server started and is ready"
+
+# Next, trigger certbot
+certbot \
+    --no-random-sleep-on-renew \
+    --server https://localhost:14000/dir \
+    --no-verify-ssl \
+    --manual-public-ip-logging-ok \
+    --config-dir ${TMP_DIR}/certbot/nginx/conf \
+    --work-dir ${TMP_DIR}/certbot/nginx/work \
+    --logs-dir ${TMP_DIR}/certbot/nginx/logs \
+    --non-interactive \
+    --no-redirect \
+    --agree-tos \
+    --register-unsafely-without-email \
+    --debug \
+    -vv \
+    run -d localhost --nginx
+
+curl --cacert ${TMP_DIR}/certbot/nginx/conf/live/localhost/chain.pem -v https://localhost/

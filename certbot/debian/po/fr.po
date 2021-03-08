@@ -1,0 +1,57 @@
+# Translation of python-certbot debconf templates to french.
+# Copyright (C) 2020, French l10n team <debian-l10n-french@lists.debian.org>
+# This file is distributed under the same license as the python-certbot package.
+#
+# Jean-Pierre Giraud <jean-pierregiraud@neuf.fr>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: python-certbot\n"
+"Report-Msgid-Bugs-To: python-certbot@packages.debian.org\n"
+"POT-Creation-Date: 2020-06-21 21:24-0400\n"
+"PO-Revision-Date: 2020-08-09 12:37+0100\n"
+"Last-Translator: Jean-Pierre Giraud <jean-pierregiraud@neuf.fr>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid "You have unexpired certs; do you still want to purge?"
+msgstr ""
+"Vous avez des certificats qui n'ont pas encore expiré, voulez-vous quand "
+"même purger ?"
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid ""
+"The certbot configuration directory /etc/letsencrypt still contains "
+"unexpired certificates that may be live on your system.  If you choose this "
+"option, the purge will continue and delete those certificates, potentially "
+"breaking services which depend on them."
+msgstr ""
+"Le répertoire de configuration de certbot /etc/letsencrypt contient encore "
+"des certificats en cours de validité qui peuvent être encore utilisés sur "
+"votre machine. Si vous choisissez cette option, la purge va se poursuivre et "
+"supprimera ces certificats, cassant éventuellement des services qui "
+"dépendent d'eux."
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid ""
+"If you have already installed different certificates in your services, or "
+"you have confirmed you don't have any services depending on these "
+"certificates, you should choose this option.  To cancel and manually delete "
+"the /etc/letsencrypt directory, you should refuse this option."
+msgstr ""
+"Si vous avez déjà installé divers certificats dans vos services, ou bien si "
+"vous avez confirmé que vous n'avez aucun service qui dépend de ces "
+"certificats, vous devriez choisir cette option. Pour annuler et supprimer "
+"manuellement le répertoire /etc/letsencrypt, vous devriez refuser cette "
+"option."

@@ -1,0 +1,52 @@
+# This file is distributed under the same license as the python-certbot package.
+# Trần Ngọc Quân <vnwildman@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: python-certbot 1.5.0\n"
+"Report-Msgid-Bugs-To: python-certbot@packages.debian.org\n"
+"POT-Creation-Date: 2020-06-21 21:24-0400\n"
+"PO-Revision-Date: 2020-06-23 08:15+0700\n"
+"Language-Team: debian-l10n-vietnamese@lists.debian.org\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: vi\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid "You have unexpired certs; do you still want to purge?"
+msgstr "Bạn có các chứng nhận chưa hết hạn; bạn vẫn muốn thanh lọc?"
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid ""
+"The certbot configuration directory /etc/letsencrypt still contains "
+"unexpired certificates that may be live on your system.  If you choose this "
+"option, the purge will continue and delete those certificates, potentially "
+"breaking services which depend on them."
+msgstr ""
+"Thư mục cấu hình certbot /etc/letsencrypt vẫn còn chứa chứng chỉ chưa hết "
+"hạn cái mà có thể vẫn còn đang được dùng trên hệ thống của bạn. Nếu bạn "
+"chọn tùy chọn này, việc thanh lọc sẽ tiếp tục và xóa các chứng chỉ đó, có "
+"khả năng đẫn đến đổ vỡ các dịch vụ phụ thuộc vào chúng."
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid ""
+"If you have already installed different certificates in your services, or "
+"you have confirmed you don't have any services depending on these "
+"certificates, you should choose this option.  To cancel and manually delete "
+"the /etc/letsencrypt directory, you should refuse this option."
+msgstr ""
+"Nếu bạn đã cài đặt các chứng chỉ khác nhau cho các dịch vụ của mình, hoặc "
+"bạn đã xác nhận rằng bạn không có bất kỳ dịch vụ nào phụ thuộc vào các "
+"chứng chỉ đó, bạn nên chọn tùy chọn này. Để hủy bỏ và xóa thủ công thư mục /"
+"etc/letsencrypt, bạn nên từ chối tùy chọn này."

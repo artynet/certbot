@@ -1,0 +1,57 @@
+# Russian translation of certbot debconf template
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the python-certbot package.
+# Lev Lamberov <dogsleg@debian.org>, 2020
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: python-certbot\n"
+"Report-Msgid-Bugs-To: python-certbot@packages.debian.org\n"
+"POT-Creation-Date: 2020-06-21 21:24-0400\n"
+"PO-Revision-Date: 2020-06-22 13:57+0500\n"
+"Language-Team: Debian L10n Russian <debian-l10n-russian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: Lev Lamberov <dogsleg@debian.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Language: ru\n"
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid "You have unexpired certs; do you still want to purge?"
+msgstr ""
+"У вас имеются сертификаты с неистёкшим сроком действия. Вы всё равно хотите "
+"их удалить?"
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid ""
+"The certbot configuration directory /etc/letsencrypt still contains "
+"unexpired certificates that may be live on your system.  If you choose this "
+"option, the purge will continue and delete those certificates, potentially "
+"breaking services which depend on them."
+msgstr ""
+"Каталог настройки certbot, /etc/letsencrypt, всё ещё содержит сертификаты с "
+"неистёкшим сроком действия, которые могут использоваться вашей системой. "
+"Если вы выберете утвердительный вариант, то очистка будет продолжена, а эти "
+"сертификаты будут удалены, что может привести к поломке служб, зависящих от "
+"этих сертификатов."
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid ""
+"If you have already installed different certificates in your services, or "
+"you have confirmed you don't have any services depending on these "
+"certificates, you should choose this option.  To cancel and manually delete "
+"the /etc/letsencrypt directory, you should refuse this option."
+msgstr ""
+"Если вы уже установили другие сертификаты для ваших служб, либо вы уверены, "
+"что от указанных сертификатов не зависит ни одна служба, то вам следует "
+"выбрать утвердительный вариант. Для отмены и удаления каталога /etc/"
+"letsencrypt вручную следует отказаться от этого варианта."

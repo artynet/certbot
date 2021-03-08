@@ -1,0 +1,52 @@
+# Debconf translations for python-certbot.
+# Copyright (C) 2020 THE python-certbot'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the python-certbot package.
+# Adriano Rafael Gomes <adrianorg@debian.org>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: python-certbot\n"
+"Report-Msgid-Bugs-To: python-certbot@packages.debian.org\n"
+"POT-Creation-Date: 2020-06-21 21:24-0400\n"
+"PO-Revision-Date: 2020-06-22 10:55-0300\n"
+"Last-Translator: Adriano Rafael Gomes <adrianorg@debian.org>\n"
+"Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
+"org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid "You have unexpired certs; do you still want to purge?"
+msgstr "Você tem certificados não expirados. Você ainda deseja expurgar?"
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid ""
+"The certbot configuration directory /etc/letsencrypt still contains "
+"unexpired certificates that may be live on your system.  If you choose this "
+"option, the purge will continue and delete those certificates, potentially "
+"breaking services which depend on them."
+msgstr ""
+"O diretório de configuração /etc/letsencrypt ainda contém certificados não "
+"expirados que podem estar em uso no seu sistema. Se você escolher essa "
+"opção, o expurgo continuará e removerá esses certificados, potencialmente "
+"quebrando serviços que dependam deles."
+
+#. Type: boolean
+#. Description
+#: ../certbot.templates:1001
+msgid ""
+"If you have already installed different certificates in your services, or "
+"you have confirmed you don't have any services depending on these "
+"certificates, you should choose this option.  To cancel and manually delete "
+"the /etc/letsencrypt directory, you should refuse this option."
+msgstr ""
+"Se você já instalou certificados diferentes em seus serviços, ou confirmou "
+"que não tem nenhum serviço dependendo desses certificados, você deve "
+"escolher essa opção. Para cancelar e remover manualmente o diretório /etc/"
+"letsencrypt, você deve recusar essa opção."

@@ -1,0 +1,16 @@
+Description: Remove man from excluded_patterns to ensure manpage builds
+Author: Harlan Lieberman-Berg <hlieberman@debian.org>
+Forwarded: not-needed
+Bug: https://github.com/certbot/certbot/issues/8633
+Index: python-certbot/docs/conf.py
+===================================================================
+--- python-certbot.orig/docs/conf.py
++++ python-certbot/docs/conf.py
+@@ -97,7 +97,6 @@ language = None
+ # directories to ignore when looking for source files.
+ exclude_patterns = [
+     '_build',
+-    'man',
+     'challenges.rst',
+     'ciphers.rst'
+ ]
